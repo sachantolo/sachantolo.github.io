@@ -82,6 +82,42 @@
       letter-spacing: 1px;
     }
 
+    .posts-menu {
+      margin-bottom: 30px;
+      padding: 16px;
+      border: 1px solid #e3e3e3;
+      border-radius: 8px;
+      background: #fafafa;
+    }
+
+    .posts-menu-title {
+      font-size: 1.05rem;
+      margin-bottom: 10px;
+      font-weight: 600;
+      color: #1a1a1a;
+    }
+
+    .post-links {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .post-link {
+      text-decoration: none;
+      color: #005a9e;
+      background: #f0f7ff;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .post-link.active {
+      background: #007acc;
+      color: #fff;
+    }
+
     @media (max-width: 640px) {
       .page {
         padding: 30px 20px;
@@ -94,6 +130,11 @@
       p {
         font-size: 1rem;
       }
+
+      .post-link {
+        width: 100%;
+        text-align: center;
+      }
     }
   </style>
 </head>
@@ -103,6 +144,14 @@
       <a href="about.html" class="nav-link">ℹ️ About Me</a>
       <a href="contact.html" class="nav-link">📧 Contact Me</a>
     </div>
+
+    <nav class="posts-menu" aria-label="Posts">
+      <div class="posts-menu-title">Posts Menu</div>
+      <div class="post-links">
+        <a href="index.html" class="post-link active">LGB Topic</a>
+        <a href="post-transgenders.html" class="post-link">Redefining Affirmation</a>
+      </div>
+    </nav>
 
     <article>
       <h1>LGB topic</h1>
