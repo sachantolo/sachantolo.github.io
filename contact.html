@@ -30,6 +30,31 @@
       position: relative;
     }
 
+    article {
+      position: relative;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: #1a1a1a;
+      font-weight: 700;
+      line-height: 1.2;
+      border-bottom: 3px solid #007acc;
+      padding-bottom: 15px;
+    }
+
+    p {
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+      color: #555;
+      text-align: justify;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
     .nav-link {
       display: inline-block;
       margin-bottom: 30px;
@@ -46,14 +71,40 @@
       background: #005a9e;
     }
 
-    h1 {
-      font-size: 2.5rem;
+    .posts-menu {
       margin-bottom: 30px;
+      padding: 16px;
+      border: 1px solid #e3e3e3;
+      border-radius: 8px;
+      background: #fafafa;
+    }
+
+    .posts-menu-title {
+      font-size: 1.05rem;
+      margin-bottom: 10px;
+      font-weight: 600;
       color: #1a1a1a;
-      font-weight: 700;
-      line-height: 1.2;
-      border-bottom: 3px solid #007acc;
-      padding-bottom: 15px;
+    }
+
+    .post-links {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .post-link {
+      text-decoration: none;
+      color: #005a9e;
+      background: #f0f7ff;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .post-link.active {
+      background: #007acc;
+      color: #fff;
     }
 
     .form-group {
@@ -114,6 +165,17 @@
       transform: scale(0.98);
     }
 
+    .watermark {
+      margin-top: 50px;
+      padding-top: 30px;
+      border-top: 1px solid #ddd;
+      font-size: 0.95rem;
+      color: #999;
+      text-align: right;
+      font-style: italic;
+      letter-spacing: 1px;
+    }
+
     @media (max-width: 640px) {
       .page {
         padding: 30px 20px;
@@ -123,10 +185,19 @@
         font-size: 1.8rem;
       }
 
+      p {
+        font-size: 1rem;
+      }
+
       input[type="text"],
       input[type="email"],
       textarea {
         font-size: 16px;
+      }
+
+      .post-link {
+        width: 100%;
+        text-align: center;
       }
     }
   </style>
@@ -134,7 +205,7 @@
 <body>
   <div class="page">
     <div style="display: flex; gap: 10px; margin-bottom: 30px; flex-wrap: wrap;">
-      <a href="index.html" class="nav-link">← Back to Blog</a>
+      <a href="index.html" class="nav-link">Back to Blog</a>
       <a href="about.html" class="nav-link">ℹ️ About Me</a>
     </div>
 

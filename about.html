@@ -30,15 +30,13 @@
       position: relative;
     }
 
-    .nav-links {
-      display: flex;
-      gap: 10px;
-      margin-bottom: 30px;
-      flex-wrap: wrap;
+    article {
+      position: relative;
     }
 
     .nav-link {
       display: inline-block;
+      margin-bottom: 30px;
       padding: 10px 20px;
       background: #007acc;
       color: white;
@@ -46,7 +44,6 @@
       border-radius: 6px;
       font-weight: 500;
       transition: background 0.3s ease;
-      font-size: 0.95rem;
     }
 
     .nav-link:hover {
@@ -76,7 +73,10 @@
       font-size: 1.1rem;
       color: #555;
       text-align: justify;
-      line-height: 1.8;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
     }
 
     .bio-intro {
@@ -121,16 +121,8 @@
         font-size: 1.8rem;
       }
 
-      h2 {
-        font-size: 1.3rem;
-      }
-
       p {
         font-size: 1rem;
-      }
-
-      .nav-links {
-        flex-direction: column;
       }
 
       .nav-link {
@@ -142,8 +134,8 @@
 </head>
 <body>
   <div class="page">
-    <div class="nav-links">
-      <a href="index.html" class="nav-link">← Back to Blog</a>
+    <div style="display: flex; gap: 10px; margin-bottom: 30px; flex-wrap: wrap;">
+      <a href="index.html" class="nav-link">Back to Blog</a>
       <a href="contact.html" class="nav-link">📧 Contact Me</a>
     </div>
 
